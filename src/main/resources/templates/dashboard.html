@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script>
+        function mostrarUsuarios() {
+            window.location.href = "/usuarios";
+        }
+        function mostrarInventario() {
+            window.location.href = "/inventario";
+        }
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="sidebar-title">Panel de Control</h2>
+        <div class="menu-item">
+            <button class="menu-btn" onclick="mostrarUsuarios()">Gestión de Usuario</button>
+        </div>
+        <div class="menu-item">
+            <button class="menu-btn" onclick="mostrarInventario()">Gestión de Inventario</button>
+        </div>
+    </div>
+    <div class="content">
+        <h1>¡Bienvenido al Dashboard!</h1>
+        <p>Aquí puedes gestionar usuarios e inventarios.</p>
+    </div>
+</body>
+</html>

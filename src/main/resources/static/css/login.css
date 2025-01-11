@@ -1,0 +1,72 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ce1212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.title {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Etiquetas y entradas */
+label {
+    font-size: 1rem;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #84de08;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Botón */
+button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16d620;
+}

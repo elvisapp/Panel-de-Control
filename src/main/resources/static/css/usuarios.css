@@ -1,0 +1,137 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.titulo {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.titulo h1 {
+    margin: 0;
+}
+
+/* Botones de acción */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px; /* Bordes semi redondos */
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.nav-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Lista de usuarios */
+.lista-usuarios {
+    width: 45%;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.usuario-contenedor {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.datos-usuario p {
+    margin: 0 10px;
+}
+
+/* Resultados de búsqueda */
+.contenedor-busqueda {
+    width: 50%;
+}
+
+.contenedor-busqueda input {
+    width: 20%; /* Ajuste de ancho para el input de búsqueda */
+}
+
+.resultado-busqueda {
+    margin-top: 20px;
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Formularios */
+.formulario-usuario {
+    margin-top: 20px;
+}
+
+form div {
+    margin: 10px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

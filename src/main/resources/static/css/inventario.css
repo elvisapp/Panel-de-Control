@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.back-button a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el menú de la izquierda */
+.menu {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f9;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    margin-left: 240px;
+    padding: 20px;
+}

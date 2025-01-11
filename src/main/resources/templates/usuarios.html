@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="/css/usuarios.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="/imagen/java.png" alt="Logo">
+        </div>
+        <div class="titulo">
+            <h1>GESTIÓN DE USUARIO</h1>
+        </div>
+    </header>
+
+    <!-- Botones de acción -->
+    <nav class="nav-buttons">
+        <button>Crear Usuario</button>
+        <button>Actualizar Usuario</button>
+        <button>Buscar Usuario</button>
+        <button>Eliminar Usuario</button>
+    </nav>
+
+    <div class="container">
+        <!-- Lista de usuarios -->
+        <div class="lista-usuarios">
+            <h2>LISTA DE USUARIOS MÁXIMO 5 USUARIOS</h2>
+            <div class="usuario-contenedor" th:each="usuario : ${usuarios}">
+                <input type="radio" name="seleccionarUsuario" th:attr="value=${usuario.id}">
+                <div class="datos-usuario">
+                    <p>ID: <span th:text="${usuario.id}"></span></p>
+                    <p>Nombre: <span th:text="${usuario.nombre}"></span></p>
+                    <p>Edad: <span th:text="${usuario.edad}"></span></p>
+                    <p>Identificación Fiscal: <span th:text="${usuario.identificacionFiscal}"></span></p>
+                    <p>Dirección: <span th:text="${usuario.direccion}"></span></p>
+                    <p>Email: <span th:text="${usuario.email}"></span></p>
+                    <img th:src="${usuario.fotoPerfil}" alt="Foto" class="user-photo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de búsqueda y resultados -->
+        <div class="contenedor-busqueda">
+            <h2>Buscar Usuario</h2>
+            <form>
+                <input type="text" id="buscarUsuario" placeholder="Buscar por ID o Nombre">
+                <button type="submit">Buscar</button>
+            </form>
+            <div class="resultado-busqueda" th:if="${usuarioEncontrado != null}">
+                <h2>Resultado de la búsqueda:</h2>
+                <p>ID: <span th:text="${usuarioEncontrado.id}"></span></p>
+                <p>Nombre: <span th:text="${usuarioEncontrado.nombre}"></span></p>
+                <p>Edad: <span th:text="${usuarioEncontrado.edad}"></span></p>
+                <p>Identificación Fiscal: <span th:text="${usuarioEncontrado.identificacionFiscal}"></span></p>
+                <p>Dirección: <span th:text="${usuarioEncontrado.direccion}"></span></p>
+                <p>Email: <span th:text="${usuarioEncontrado.email}"></span></p>
+                <img th:src="${usuarioEncontrado.fotoPerfil}" alt="Foto" class="user-photo">
+            </div>
+        </div>
+
+        <!-- Formulario para crear y actualizar usuarios -->
+        <div class="formulario-usuario">
+            <h2>Crear/Actualizar Usuario</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="text" id="edad">
+                </div>
+                <div>
+                    <label for="identificacionFiscal">Identificación Fiscal:</label>
+                    <input type="text" id="identificacionFiscal">
+                </div>
+                <div>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </div>
+                <div>
+                    <label for="fotoPerfil">Foto (URL):</label>
+                    <input type="text" id="fotoPerfil">
+                </div>
+                <div>
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
