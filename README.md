@@ -28,7 +28,9 @@ Página personalizada para tratamento elegante de erros.
 <h3>Características do servidor:</h3>
 Porta padrão configurada para 8080.
 Arquivos estáticos servidos a partir de classpath:/static/
-<img src=" https://github.com/user-attachments/assets/03cebb48-3579-4929-8dc9-ffb77355385f">
+
+
+<img src="https://github.com/user-attachments/assets/5ead47d5-eb65-4646-9635-0df776f5673a">
 <img src="https://github.com/user-attachments/assets/15715339-2421-4982-b53f-2b21df894776">
 <img src="https://github.com/user-attachments/assets/8475925c-c239-4dbf-b403-9583c32ac412">
 <img src="https://github.com/user-attachments/assets/52f0d022-ee00-4ba9-a1a4-e8ff4075a050 ">
